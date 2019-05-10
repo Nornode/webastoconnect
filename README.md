@@ -6,8 +6,13 @@ Shell scripts for pulling the data from your Webasto connect enabled car, boat o
 
 # Currently not working!
 There are a few hurdles to solve:
+
  1. Credentials aren't updating
+ 
     stripe_mdi: Static and something tied to your account.
-    stripe_sid: Unknown and updating possibly tied to your payments for the service (stripe)
+    
+    stripe_sid: Set by stripe-js (Payment solution) within a javascript and must be generated somehow. *(Please HELP!)*
+    
     hssess: the session key and can be obtained with webasto-login.sh
+    
  2. Else, after some stylization I think this works pretty nice.

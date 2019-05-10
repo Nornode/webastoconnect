@@ -5,7 +5,7 @@ Shell scripts for pulling the data from your Webasto connect enabled car, boat o
 
 
 # Currently not working!
-There are a fuew hurdles to solve:
+There are a few hurdles to solve:
  1. Credentials aren't updating
     stripe_mdi: Static and something tied to your account.
     stripe_sid: Unknown and updating possibly tied to your payments for the service (stripe)

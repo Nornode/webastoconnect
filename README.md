@@ -9,10 +9,10 @@ There are a few hurdles to solve:
 
  1. Credentials aren't updating
  
-    stripe_mdi: Static and something tied to your account.
+    _stripe_mdi:_ Static and something tied to your account.
     
-    stripe_sid: Set by stripe-js (Payment solution) within a javascript and must be generated somehow. *(Please HELP!)*
+    _stripe_sid:_ Set by stripe-js (Payment solution) within a javascript and must be generated somehow. _*(Please HELP!)*_
     
-    hssess: the session key and can be obtained with webasto-login.sh
+    _hssess:_ the session key and can be obtained with webasto-login.sh
     
  2. Else, after some stylization I think this works pretty nice.

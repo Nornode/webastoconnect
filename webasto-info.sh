@@ -1,7 +1,7 @@
 #!/bin/bash
 credentials-cookie=credentials-cookie.txt
-stripe_sid=stripe_sid_secret.txt
-stripe_mid=stripe_mid_secret.tct
+stripe_sid=`cat stripe_sid_secret.txt`
+stripe_mid=`cat stripe_mid_secret.txt`
 #epoch=date +%s%N | cut -b1-13
 epoch=`date +%s%N | cut -b1-13`
 #before=$epoch -1200
@@ -9,8 +9,8 @@ echo -e "\n $epoch \n"
 sleep 10
 echo -e "\n Let's do this...\n"
 #webasto_info=`
-curl -v 'https://my.webastoconnect.com/webapi/get_service_data?poll=true&_=$epoch' \
-		-H 'Cookie: i18next=en; __stripe_mid=$stripe_mid; __stripe_sid=$stripe_sid; hssess=$credentials-cookie' \
+curl -v 'https://my.webastoconnect.com/webapi/get_service_data?poll=true&_='$epoch \
+		-H 'Cookie: i18next=en; __stripe_mid='$stripe_mid'; __stripe_sid='$stripe_sid'; hssess=XXXXXXXXX' \
 		-H 'DNT: 1' \
 		-H 'Accept-Encoding: gzip, deflate, br' \
 		-H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,sv;q=0.7' \
